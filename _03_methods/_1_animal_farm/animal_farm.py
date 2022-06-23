@@ -14,6 +14,18 @@ def animals():
     # TODO 1. Ask the user which animal they want, then see and
     #  hear the animal they chose using one of the methods below.
 
+    question=simpledialog.askstring(title="Animal farm", prompt="choose an animal: cat, cow, dog, duck, llama")
+    if question == 'cow':
+        moo()
+    if question == 'cat':
+        meow()
+    if question == 'dog':
+        woof()
+    if question == 'duck':
+        quack()
+    if question == 'llama':
+        llama_scream()
+
     # TODO 2. Make it so that the user can keep entering new animals.
 
     # TODO 3. If the user enters 'exit', stop the program
